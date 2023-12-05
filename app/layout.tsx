@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Social Media App',
   description: 'App Social Media',
+  icons: '/logo.png'
 }
 
 export default function RootLayout({
