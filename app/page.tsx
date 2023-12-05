@@ -1,12 +1,9 @@
 import Layout from "@/components/Layout"
-import Login from "@/components/Login";
 import PostForm from "@/components/PostForm"
 import PostItem from "@/components/PostItem"
+import Register from "@/components/Register";
 
 const Home: React.FC = () => {
-  const login = true;
-
-  if (login) return <Login />
   return (
     <Layout hideNavigation={false}>
       <PostForm />
