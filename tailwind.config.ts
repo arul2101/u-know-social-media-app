@@ -17,7 +17,7 @@ const config: Config = {
         black: '#000000',
         white: '#fff',
         primary: '#F5F7FB',
-        socialBlue: '#218DFA',
+        socialBlue: '#164863',
       }
     },
   },
