@@ -7,6 +7,12 @@ const nextConfig = {
         hostname: 'i.pravatar.cc',
         port: '',
         pathname: '/300/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**'
       }
     ]
   }
