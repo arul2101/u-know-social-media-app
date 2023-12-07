@@ -12,8 +12,8 @@ const menus = [
   },
   {
     id: 2,
-    title: "Friends",
-    path: "/friends",
+    title: "Profile",
+    path: "/profile",
     icon: <GoPeople />
   },
   {
