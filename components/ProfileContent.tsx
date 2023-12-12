@@ -7,9 +7,10 @@ type ProfileContentProps = {
 }
 
 const ProfileContent: React.FC<ProfileContentProps> = ({activeTab}) => {
+
   return (
     <div className="">
-      {activeTab === 'posts' && (
+      {activeTab === 'friends' && (
         <div>
           <Card noPadding={false}>
             <h2 className="text-3xl mb-2">Friends</h2>
@@ -23,11 +24,16 @@ const ProfileContent: React.FC<ProfileContentProps> = ({activeTab}) => {
               <div className="border-b border-b-gray-100 p-4 -mx-4">
                 <FriendItem />
               </div>
-              <div className="border-b border-b-gray-100 p-4 -mx-4">
-                <FriendItem />
-              </div>
             </div>
           </Card>
+        </div>
+      )}
+
+      {activeTab === 'posts' && (
+        <div>
+          <PostItem />
+          <PostItem />
+          <PostItem />
         </div>
       )}
     </div>
