@@ -1,6 +1,6 @@
-import Card from "./Card";
-import FriendItem from "./FriendItem";
-import PostItem from "./PostItem";
+import ProfileFriendsPage from "./ProfileFriendsPage";
+import ProfilePostsPage from "./ProfilePostsPage";
+import ProfileImagesPage from "./ProfileImagesPage";
 
 type ProfileContentProps = {
   activeTab: string;
@@ -9,34 +9,11 @@ type ProfileContentProps = {
 const ProfileContent: React.FC<ProfileContentProps> = ({activeTab}) => {
 
   return (
-    <div className="">
-      {activeTab === 'friends' && (
-        <div>
-          <Card noPadding={false}>
-            <h2 className="text-3xl mb-2">Friends</h2>
-            <div className="">
-              <div className="border-b border-b-gray-100 p-4 -mx-4">
-                <FriendItem />
-              </div>
-              <div className="border-b border-b-gray-100 p-4 -mx-4">
-                <FriendItem />
-              </div>
-              <div className="border-b border-b-gray-100 p-4 -mx-4">
-                <FriendItem />
-              </div>
-            </div>
-          </Card>
-        </div>
-      )}
-
-      {activeTab === 'posts' && (
-        <div>
-          <PostItem />
-          <PostItem />
-          <PostItem />
-        </div>
-      )}
-    </div>
+    <>
+      {activeTab === 'friends' && <ProfileFriendsPage />}
+      {activeTab === 'posts' && <ProfilePostsPage />}
+      {activeTab === "photos" && <ProfileImagesPage />}
+    </>
   )
 }
 
