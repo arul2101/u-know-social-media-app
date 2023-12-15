@@ -4,9 +4,10 @@ import { FaGoogle } from "react-icons/fa";
 
 const Login: React.FC = () => {
   return (
-    <div className="max-w-[1200px] flex justify-center h-[100%] px-2 mt-20">
-      <div className="bg-white shadow-md shadow-gray-300 py-4 px-8 rounded-m w-[400px]">
-        <div className="flex flex-col items-center mb-6">
+    // max-w-[1200px]
+    <div className="flex justify-center items-center h-screen px-2">
+      <div className="bg-white shadow-md shadow-gray-300 p-8 rounded-lg w-[400px]">
+        <div className="flex justify-center mb-6">
           <Image
             src='/logo.png'
             alt="Logo Brand"
@@ -18,7 +19,7 @@ const Login: React.FC = () => {
 
         <form action="" className="flex flex-col items center">
           <input
-            type="text"
+            type="email"
             className="border shadow-lg rounded-lg px-4 py-2 w-full mb-4 focus:outline-none focus:shadow-gray-600 transition-all"
             id="email"
             name="email"

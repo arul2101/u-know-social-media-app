@@ -3,9 +3,9 @@ import Link from "next/link"
 
 const Register: React.FC = () => {
   return (
-    <div className="max-w-[1200px] flex justify-center h-[100%] px-2 my-8">
-      <div className="bg-white shadow-md shadow-gray-300 py-4 px-8 rounded-m w-[400px]">
-        <div className="flex flex-col items-center mb-6">
+    <div className="flex justify-center items-center h-screen px-2">
+      <div className="bg-white shadow-md shadow-gray-300 p-8 rounded-lg w-[400px]">
+        <div className="flex justify-center mb-6">
           <Image
             src='/logo.png'
             alt="Logo Brand"
